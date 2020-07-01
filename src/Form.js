@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FormErrors } from './FormErrors';
 import './Form.css';
 
+
 class Form extends Component {
   constructor (props) {
     super(props);
@@ -72,8 +73,8 @@ class Form extends Component {
 
   render () {
     return (
-      <form className="demoForm" method="post" onSubmit={this.Login.bind(this)}>
-        <h2>Sign up</h2>
+      <form className="Form" method="post" onSubmit={this.Login.bind(this)}>
+        <h2 style={{color: "black"}}>Login Here</h2>
         <div className="panel panel-default">
           <FormErrors formErrors={this.state.formErrors} />
         </div>
@@ -91,7 +92,8 @@ class Form extends Component {
             value={this.state.password}
             onChange={this.handleUserInput}  />
         </div>
-        <button type="submit" className="btn btn-primary" disabled={!this.state.formValid}>Sign up</button>
+        <button  type="submit"  className="btn btn-primary" disabled={!this.state.formValid}>Login</button>
+        
       </form>
     )
   }
