@@ -65,7 +65,7 @@ class Form extends Component {
   
     }else {
   this.setState({
-    error: 'Invalid',
+    error: 'Invalid', 
   });
   alert("Logging Invalid");
     }
