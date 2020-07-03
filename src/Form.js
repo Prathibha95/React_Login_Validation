@@ -60,7 +60,7 @@ class Form extends Component {
     var password = e.target.elements.password.value;
     alert(password);
     if(email === 'aaa@gmail.com' && password === '1234567'){
-  // this.props.history.push('/login' + email);
+   //this.props.history.push('/login' + email);//Navigate to the success page;
   alert("Loggin Successfull");
   
     }else {
